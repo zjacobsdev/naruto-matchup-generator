@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+body{
+  background:plum;
+}
+h3{
+  margin-top: 40px;
+  float: left;
+  /* display: inline-block; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type:none;
+}
+.message {
+ width: 45%;
+ float: left;
+ height: 300;
+}
+section{
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+h2{
+  clear: both;
+}

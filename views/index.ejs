@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snackr</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Chūnin Exams Generator</h1>
+  <h2>Whose your opponent</h2>
+  <section>
+    
+    <span id = "usr-player"></span>
+    <span>VS.</span>
+    <span id = "bot-player"></span>
+    <button id = "random-btn" type="button">MatchUp</button>
+  </section>
+
+  <ul class="messages">
+    <h3>Match Up</h3>
+        <% for(var i=0; i < matchup.length; i++) {%>
+          <li class="message">
+      
+              <span><%= matchup[i].player %></span> 
+              <span>vs</span>
+              <span><%= matchup[i].opponent %></span>
+              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+       <% } %>
+  </ul>
+
+  <h2>Add your freinds</h2>
+
+  <form action="/arena" method="POST">
+    <input type="text" placeholder="opponent" name="player">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
